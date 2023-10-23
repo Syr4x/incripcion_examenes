@@ -1,0 +1,57 @@
+* {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+h1 {
+    /* centra el titulo */
+    text-align: center;
+}
+
+/* selecciona el formulario con el id formulario */
+#formulario {
+    /* fija en ancho del formulario */
+    width: 700px;
+    /* con todos los margenes automaticos se centra el formulario*/
+    margin: auto;
+    /* espacio del borde hacia adentro */
+    padding: 20px;
+    /* redondeo de los bordes */
+    border-radius: 10px;
+    /* color de fondo del formulario */
+    background-color: #c6c8ca;
+    /* se especifica un borde transparente */
+    border: 1px solid transparent;
+}
+
+/* selecciona todos los input y select dentro del formulario con el id formulario*/
+#formulario input,
+select {
+    /* se pone el display en bloque para que ocupe todo el ancho del contenedor (en este caso el formulario) */
+    display: block;
+    /* se le da un ancho del 100% del contenedor padre */
+    width: 100%;
+    /* se le da un margen abajo para la separacion entre los inputs */
+    margin-bottom: 10px;
+    /* se le aplica un espacio interno */
+    padding: 5px;
+    /* se especifica un borde transparente */
+    border: 1px solid transparent;
+}
+
+/* selecciona el boton enviar */
+#btnenviar {
+    /* redondeo de los bordes */
+    border-radius: 10px;
+    /* se le aplica un borde verde y con el important reemplaza la configuracion anterior que es heredada */
+    border: 1px solid #198754 !important;
+    /* cambia el puntero de mouse a una mano al ponerse sobre el boton */
+    cursor: pointer;
+}
+
+/* el :hover es para cuando pasas por arriba del boton enviar */
+#btnenviar:hover {
+    /* cambia el fondo del boton */
+    background-color: #198754;
+    /*cambia el color de letra */
+    color: white;
+}
