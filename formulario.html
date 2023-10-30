@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Mesas de Exámenes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Inscripción a Mesas de Exámenes</h1>
+
+    <form id="formulario" action="#" method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" minlength="3" pattern="[a-zA-Z]" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido" minlength="3" pattern="[a-zA-Z]"
+            required> <!-- pattern es el patrón de input que necesito -->
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" placeholder="DNI sin puntos" minlength="8" maxlength="8" pattern="[0-9]"
+            required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+        <label for="tel">Teléfono:</label>
+        <input type="text" id="tel" name="tel" placeholder="Número de teléfono" required>
+
+        <label for="condicion">Condición</label>
+        <select id="condicion" name="condicion" required>
+            <option>Elegir una opción</option>
+            <option value="regular">REGULAR</option>
+            <option value="libre">LIBRE</option>
+        </select>
+
+        <label for="carrera">Carrera</label>
+        <select id="carrera" name="carrera" required>
+            <option>Elegir una opción</option>
+            <option value="analista_sistemas">ANALISTA DE SISTEMAS</option>
+            <option value="administracion">ADMINISTRACIÓN DE EMPRESAS</option>
+            <option value="administracion">EDUCACIÓN INCIAL</option>
+            <option value="administracion">ENFERMERÍA</option>
+        </select>
+
+        <label for="materia">Materia</label>
+        <select id="materia" name="materia" required>
+            <option>Elegir una opción</option>
+            <optgroup label="primer año">
+                <option value="algoritmosI">ALGORITMOS Y ESTRUCTURAS DE DATOS I</option>
+                <option value="bdI">BASE DE DATOS I</option>
+                <option value="arquitectura">ARQUITECTURA DE LAS COMPUTADORAS</option>
+                <option value="practicasI">PRÁCTICAS PROFESIONALIZANTES I</option>
+                <option value="analisisI">ANÁLISIS MATEMÁTICO I</option>
+                <option value="algebra">ÁLGEBRA</option>
+                <option value="cts">CIENCIA, TECNOLOGÍA Y SOCIEDAD</option>
+            </optgroup>
+            <optgroup label="segundo año">
+                <option value="algoritmosII">ALGORITMOS Y ESTRUCTURAS DE DATOS II</option>
+                <option value="bdII">BASE DE DATOS II</option>
+                <option value="so">SISTEMAS OPERATIVOS</option>
+                <option value="practicasII">PRÁCTICAS PROFESIONALIZANTES II</option>
+                <option value="analisisII">ANALISIS MATEMÁTICO II</option>
+                <option value="pye">PROBABILIDAD Y ESTADÍSTICA</option>
+                <option value="ingenieriaI">INGENIERÍA DE SOFTWARE I</option>
+
+
+            </optgroup>
+        </select>
+        <label for="llamados">Llamados</label>
+        <select id="llamados" name="llamados" required>
+            <option>Elegir una opción</option>
+            <option value="1erLlamado">1er Llamado</option>
+            <option value="2doLlamado">2do Llamado</option>
+        </select>
+
+        <input id="btnenviar" type="submit" value="ENVIAR">
+
+    </form>
+
+</body>
+
+</html>
