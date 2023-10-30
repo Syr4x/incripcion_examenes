@@ -24,8 +24,7 @@ h1 {
 }
 
 /* selecciona todos los input y select dentro del formulario con el id formulario*/
-#formulario input,
-select {
+#formulario input, a, select {
     /* se pone el display en bloque para que ocupe todo el ancho del contenedor (en este caso el formulario) */
     display: block;
     /* se le da un ancho del 100% del contenedor padre */
@@ -36,7 +35,14 @@ select {
     padding: 5px;
     /* se especifica un borde transparente */
     border: 1px solid transparent;
+    background-color: white;
 }
+
+#formulario input, a {
+    /* se le da un ancho del 100% del contenedor padre */
+    width: calc(100% - 12px);
+}
+
 
 /* selecciona el boton enviar */
 #btnenviar {
@@ -46,6 +52,7 @@ select {
     border: 1px solid #198754 !important;
     /* cambia el puntero de mouse a una mano al ponerse sobre el boton */
     cursor: pointer;
+    width: 100% !important;
 }
 
 /* el :hover es para cuando pasas por arriba del boton enviar */
@@ -54,4 +61,28 @@ select {
     background-color: #198754;
     /*cambia el color de letra */
     color: white;
+}
+
+#btncancelar {
+    /* redondeo de los bordes */
+    border-radius: 10px;
+    /* se le aplica un borde verde y con el important reemplaza la configuracion anterior que es heredada */
+    border: 1px solid rgb(196, 51, 51) !important;
+    /* cambia el puntero de mouse a una mano al ponerse sobre el boton */
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none; /* para que no subraye la palabra cancelar */
+}
+
+/* el :hover es para cuando pasas por arriba del boton enviar */
+#btncancelar:hover {
+    /* cambia el fondo del boton */
+    background-color: rgb(196, 51, 51);
+    /*cambia el color de letra */
+    color: white;
+}
+
+#btncancelar:link,#btncancelar:visited,#btncancelar:focus{
+    color: black;
 }
