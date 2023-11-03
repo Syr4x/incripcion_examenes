@@ -1,5 +1,6 @@
 * {
     font-family: 'Tilt Neon', sans-serif;
+    /* que todo tenga esta fuente */
 }
 
 h1 {
@@ -12,7 +13,7 @@ h1 {
     /* fija en ancho del formulario */
     width: 700px;
     /* con todos los margenes automaticos se centra el formulario*/
-    margin: auto;
+    margin: 10px auto;
     /* espacio del borde hacia adentro */
     padding: 20px;
     /* redondeo de los bordes */
@@ -24,23 +25,27 @@ h1 {
 }
 
 /* selecciona todos los input y select dentro del formulario con el id formulario*/
-#formulario input, a, select {
+#formulario input,
+#formulario a,
+#formulario select {
     /* se pone el display en bloque para que ocupe todo el ancho del contenedor (en este caso el formulario) */
     display: block;
-    /* se le da un ancho del 100% del contenedor padre */
+    /*le da un ancho del 100% del contenedor padre */
     width: 100%;
-    /* se le da un margen abajo para la separacion entre los inputs */
+    /*le da un margen abajo para la separacion entre los inputs */
     margin-bottom: 10px;
-    /* se le aplica un espacio interno */
+    /*le aplica un espacio interno */
     padding: 5px;
     /* se especifica un borde transparente */
     border: 1px solid transparent;
     background-color: white;
 }
 
-#formulario input, a {
-    /* se le da un ancho del 100% del contenedor padre */
+#formulario input,
+#formulario a {
+    /*le da un ancho del 100% del contenedor padre */
     width: calc(100% - 12px);
+    /* le resto 12px porque es la diferencia que tiene con los select, sino quedaba más largo */
 }
 
 
@@ -48,7 +53,7 @@ h1 {
 #btnenviar {
     /* redondeo de los bordes */
     border-radius: 10px;
-    /* se le aplica un borde verde y con el important reemplaza la configuracion anterior que es heredada */
+    /*le aplica un borde verde y con el important reemplaza la configuracion anterior que es heredada */
     border: 1px solid #198754 !important;
     /* cambia el puntero de mouse a una mano al ponerse sobre el boton */
     cursor: pointer;
@@ -72,7 +77,9 @@ h1 {
     cursor: pointer;
     text-align: center;
     font-size: 13px;
-    text-decoration: none; /* para que no subraye la palabra cancelar */
+    text-decoration: none;
+    /* para que no subraye la palabra cancelar */
+
 }
 
 /* el :hover es para cuando pasas por arriba del boton enviar */
@@ -83,6 +90,8 @@ h1 {
     color: white;
 }
 
-#btncancelar:link,#btncancelar:visited,#btncancelar:focus{
+#btncancelar:link,
+#btncancelar:visited,
+#btncancelar:focus {
     color: black;
 }

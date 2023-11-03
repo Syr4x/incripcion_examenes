@@ -7,16 +7,17 @@ body {
 }
 
 header {
-    
-    color:#fff;
+
+    color: #fff;
     text-align: center;
     height: 125px;
 }
 
 nav ul {
-    list-style-type: none; /* le saca los puntitos */
-    background-color:black;
-    overflow: hidden; 
+    list-style-type: none;
+    /* le saca los puntitos */
+    background-color: black;
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -34,9 +35,9 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color:darkgray;
-   
-    
+    background-color: darkgray;
+
+
 }
 
 
@@ -46,44 +47,49 @@ h2 {
 
 /* Estilos de la sección de noticias */
 
-.main{
-    
+.main {
+
     width: 100%;
-    height: calc(100vh - 125px); /* el alto lo calculo haciendo el 100% de MI pantalla menos el header */
-    display: flex; /* para que el contenido del main sea flexible y no se apilen uns a otros */
-    justify-content: center; /* para alinear de manera horizontal*/
-    align-items: center; /* para alinear de manera vertical */
+    display: flex;
+    /* para que el contenido del main sea flexible y no se apilen uns a otros */
+    justify-content: center;
+    /* para alinear de manera horizontal*/
+    /*align-items: center;*/
+    /* para alinear de manera vertical */
 }
 
-img{
-width: 100%;
+img {
+    width: 100%;
 }
 
 .img_noticias {
     width: 500px;
 }
 
-.noticias-izq{
-    background-color:#fff;
+.noticias-izq {
+    background-color: #fff;
     width: 70%;
     height: 100%;
     margin: 10px;
     padding: 10px;
-    
+
 }
 
-.aside{
-    background-color:beige;
+.aside {
+    background-color: beige;
     width: 25%;
     height: 100%;
     margin: 10px;
     padding: 10px;
-  
-    
+
+
 }
 
-.footer{
-    background-color:black;
+.footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
     width: 100%;
-    height: 100px;
+    padding: 10px 0;
+    /*el primer valor es arriba y abajo y el otro es derecha e izquierda */
 }
