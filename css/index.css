@@ -59,6 +59,10 @@ img{
 width: 100%;
 }
 
+.img_noticias {
+    width: 500px;
+}
+
 .noticias-izq{
     background-color:#fff;
     width: 70%;
