@@ -48,6 +48,10 @@ h1 {
     /* le resto 12px porque es la diferencia que tiene con los select, sino quedaba más largo */
 }
 
+#consulta {
+    font-size: large;
+}
+
 
 /* selecciona el boton enviar */
 #btnenviar {

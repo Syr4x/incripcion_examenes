@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Mesas de Exámenes</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Instituto Superior de Formación Docente y Técnica N°80</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Trámites</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Escribe tu consulta</h1>
+
+    <form id="formulario" action="#" method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombreContacto" name="nombreContacto" placeholder="Nombre" minlength="3"
+            pattern="[a-zA-Z]" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellidoContacto" name="apellidoContacto" placeholder="Apellido" minlength="3"
+            pattern="[a-zA-Z]" required> <!-- pattern es el patrón de input que necesito -->
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dniContacto" name="dniContacto" placeholder="DNI sin puntos" minlength="8" maxlength="8"
+            pattern="[0-9]" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="emailContacto" name="emailContacto" placeholder="example@example.com" required>
+
+        <label for="tel">Teléfono:</label>
+        <input type="text" id="telContacto" name="telContacto" placeholder="Número de teléfono" required>
+
+        <label for="consulta" size="50">Consulta</label>
+        <input type="text" class="consulta">
+
+        <input id="btnenviar" type="submit" value="ENVIAR">
+        <a id="btncancelar" href="contacto.html">CANCELAR</a>
+
+
+    </form>
+
+    <footer class="footer">
+        <p>Av. Perón 28 | (6530) | Carlos Casares - Bs. As.</p>
+        <p>E-mails: intituto80@gmail.com | secretariais80@gmail.com</p>
+        <p>Teléfono: 02395 - 451763 / 451697</p>
+        <p>Facebook: intitutocasares</p>
+
+    </footer>
+
+</body>
+
+</html>

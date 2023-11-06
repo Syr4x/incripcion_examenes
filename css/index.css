@@ -68,6 +68,8 @@ img {
 
 .noticias-izq {
     background-color: #fff;
+    justify-content: center;
+    align-items: center;
     width: 70%;
     height: 100%;
     margin: 10px;
@@ -92,4 +94,30 @@ img {
     width: 100%;
     padding: 10px 0;
     /*el primer valor es arriba y abajo y el otro es derecha e izquierda */
+}
+
+/*preguntas frecuentes */
+
+.faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.preguntas {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.preg {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.resp {
+    display: none;
 }
