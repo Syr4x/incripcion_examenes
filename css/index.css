@@ -41,6 +41,7 @@ nav li a:hover {
 }
 
 
+
 h2 {
     color: #333;
 }
@@ -60,21 +61,29 @@ h2 {
 
 img {
     width: 100%;
+    justify-content: center; 
 }
 
 .img_noticias {
     width: 500px;
 }
 
+
+
 .noticias-izq {
     background-color: #fff;
-    justify-content: center;
     align-items: center;
     width: 70%;
     height: 100%;
     margin: 10px;
     padding: 10px;
 
+}
+
+article{
+    align-items: center;
+    display: flex; /* tuve que poner display: flex porque el display: block no me dejaba aplicar la propiedad justify-content */
+    flex-direction: column; /* por defecto ordena en fila, con el flex-direction: column le indico que ordene por columna */
 }
 
 .aside {
@@ -98,9 +107,8 @@ img {
 
 /*preguntas frecuentes */
 
-.faq-container {
-    max-width: 800px;
-    margin: 20px auto;
+.pf-container {
+    margin: 20px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -119,5 +127,5 @@ img {
 }
 
 .resp {
-    display: none;
+   
 }
