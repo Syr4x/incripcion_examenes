@@ -31,14 +31,15 @@
 
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Nombre" minlength="3" pattern="[a-zA-Z]" required>
+        <!-- pattern es el patrón de input que necesito y con esto aseguro que el usuario solo escriba lo que aclaro en el pattern, en este caso letras de a a a la z ya sea minúscula o mayúsculas-->
 
         <label for="apellido">Apellido:</label>
         <input type="text" id="apellido" name="apellido" placeholder="Apellido" minlength="3" pattern="[a-zA-Z]"
-            required> <!-- pattern es el patrón de input que necesito -->
+            required>
 
         <label for="dni">DNI:</label>
         <input type="text" id="dni" name="dni" placeholder="DNI sin puntos" minlength="8" maxlength="8" pattern="[0-9]"
-            required>
+            required> <!-- acá el patern es para que escriban solo números de 0 al 9-->
 
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" placeholder="example@example.com" required>
@@ -46,6 +47,8 @@
         <label for="tel">Teléfono:</label>
         <input type="text" id="tel" name="tel" placeholder="Número de teléfono" required>
 
+        <!-- los placeholder son para que muestre en el input lo que el usuario debe cargar pero al hacer click se va-->
+        <!-- llos select son las listas desplegables y los option cada opción de esa lista, el optgrroup me agrupa los option que le indique-->
         <label for="condicion">Condición</label>
         <select id="condicion" name="condicion" required>
             <option>Elegir una opción</option>
